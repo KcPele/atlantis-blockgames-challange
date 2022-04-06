@@ -1,0 +1,73 @@
+.container {
+  width: 90%;
+  max-width: 990px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px auto;
+  gap: 20px;
+  
+}
+
+.menu {
+  
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+
+.dashboard-card {
+
+  width: 280px;
+  height: 600px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+}
+.header > h3 {
+  margin-top: 0;
+}
+
+.wallet-button {
+  text-align: end;
+}
+.wallet-button button {
+  border-radius: 5px;
+  border: 2px solid gray;
+  height: 2.6rem;
+  background-color: white;
+}
+
+.menu-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+.menu p {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+.card {
+  background-color: white;
+  border-radius: 8px;
+  height: 170px;
+}
+
+.drop-container {
+  margin-top: 20px;
+}
+
+.drop {
+  width: 670px;
+  height: 123px;
+  border: 2px dashed lightblue;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drop:hover {
+  cursor: pointer;
+}
