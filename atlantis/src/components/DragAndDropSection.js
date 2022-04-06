@@ -5,7 +5,7 @@ import * as XLSX from "xlsx";
 import { CustomersContext } from "./contexts/CustomersAddressProvider";
 
 function DragAndDropSection() {
-  const { excelFile, dispatchExcel } = useContext(CustomersContext);
+  const { dispatchExcel } = useContext(CustomersContext);
   
   const onDrop = useCallback((acceptedFiles) => {
     
@@ -42,7 +42,6 @@ function DragAndDropSection() {
     });
     promise
       .then((res) => {
-        console.log(res);
 
         dispatchExcel({ type: "EXCEL_LIST_SUCCESS", payload: res });
       })
